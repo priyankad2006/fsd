@@ -1,0 +1,19 @@
+<html>
+<head>
+</head>
+<body>
+<form name="details">
+<p id="p1"> </p>
+<p id="p2"> </p>
+<p id="p3"> </p>
+<p id="p4"> </p>
+<script>
+document.getElementById("p1").innerHTML=localStorage.getItem("name");
+document.getElementById("p2").innerHTML=localStorage.getItem("email");
+document.getElementById("p3").innerHTML=localStorage.getItem("address");
+document.getElementById("p4").innerHTML=parseInt(localStorage.getItem("name"))
++parseInt(localStorage.getItem("email"))+parseInt(localStorage.getItem("address"));
+</script>
+</form>
+</body>
+</html>
